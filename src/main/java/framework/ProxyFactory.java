@@ -20,7 +20,7 @@ public class ProxyFactory {
                 Invocation invocation = new Invocation(interfaceClass.getName(), method.getName(), method.getParameterTypes(), args);
 
                 List<URL> urlList = RemoteMapRegister.get(interfaceClass.getName());
-                URL url = LoadBalance.getrandom(urlList);
+                URL url = LoadBalance.getServerByRandom(urlList);
 
                 String result = protocol.send(url, invocation);
                 return result;
