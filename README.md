@@ -1,5 +1,5 @@
 # easyRpc
-### DUBBO
+模仿dubbo实现的简易RPC框架
 
 - Provider模块
   - 提供API、实现API、暴露(启动tomcat, NettyServer)、服务本地注册、服务注册中心注册
